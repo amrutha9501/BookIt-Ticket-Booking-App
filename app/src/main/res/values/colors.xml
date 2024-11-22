@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="Demonic_Red">#BB2233</color>
+    <color name="Atomic_Orange">#FA8603</color>
+    <color name="Autumn_White">#FAE3CF</color>
+    <color name="Firmament_Blue">#0A0F24</color>
+    <color name="Rust">#D96426</color>
+
+
+    <color name="filterstext">#2C3E50 </color>
+
+    <color name="light_Blue">#B4BBD4</color>
+
+    <color name="water_blue">#DADFE2</color>
+    <color name="icon_color">#B1B9C7</color>
+    <color name="green">#34e3c4</color>
+    <color name="orange">#F16E16</color>
+
+    <color name="Navy">#18305C</color>
+    <color name="Button">#DADFE2</color>
+
+    <color name="pink">#e45eb0</color>
+
+
+
+    <color name="text_primary">#333333</color>
+    <color name="text_secondary">#666666</color>
+
+    <color name="blue">#3F51B5</color>
+    <color name="atomn_white">#FAE3CF</color>
+    <color name="menu_blue">#00093C</color>
+    <color name="lightGray">#00093C</color>
+
+
+
+    <color name="primary_text_color">#212121</color> <!-- Dark Gray for main text -->
+    <color name="secondary_text_color">#757575</color> <!-- Light Gray for labels -->
+    <color name="header_text_color">#000000</color> <!-- Black for header -->
+    <color name="card_background">#FAFAFA</color> <!-- Light background for card -->
+    <color name="id_background_color">#E0E0E0</color> <!-- Light gray background for ID section -->
+
+
+    <color name="colorAccent">#3172A4</color>
+    <color name="colorPrimary">#1A1908</color>
+    <color name="grey">#726F6F</color>
+
+
+
+
+
+</resources>

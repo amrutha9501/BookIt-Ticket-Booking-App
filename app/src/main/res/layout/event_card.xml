@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_columnWeight="1"
+    android:layout_gravity="center"
+    android:layout_margin="5dp"
+    android:elevation="0dp"
+    app:cardBackgroundColor="@color/water_blue"
+
+    app:cardCornerRadius="8dp"
+
+    android:id="@+id/eventcard">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:background="@android:color/transparent">
+
+        <!-- Movie Poster -->
+        <ImageView
+            android:id="@+id/moviePoster"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/poster"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp">
+
+
+            <!-- Likes Count / Rating TextView on the right -->
+            <TextView
+                android:id="@+id/movieRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="Rating: 4.5"
+                android:textColor="@color/Firmament_Blue"
+                android:textSize="14sp" />
+
+            <!-- Genre TextView on the left -->
+            <TextView
+                android:id="@+id/movieGenre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="8dp"
+                android:text="Genre"
+                android:textColor="@color/Firmament_Blue"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+        <!-- Movie Name -->
+        <TextView
+            android:id="@+id/movieName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Movie Title"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

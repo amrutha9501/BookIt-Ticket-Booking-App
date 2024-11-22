@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_Blue"
+    tools:ignore="ExtraText">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/history_content_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/menu_view"
+        android:background="@color/white"
+        android:padding="15dp"/>
+
+
+
+
+
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/menu_view"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/rounded_bottom">
+
+
+        <!-- Title in the center -->
+
+        <ImageView
+            android:id="@+id/background_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="-1dp"
+            android:layout_marginBottom="0dp"
+
+            android:clipToOutline="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/blue_background" />
+
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="25dp"
+            android:contentDescription="Back Icon"
+            android:src="@drawable/homeicon" />
+
+        <TextView
+            android:id="@+id/menu_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="70dp"
+            android:text="Your Orders"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/menu_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="18dp"
+
+            android:layout_marginEnd="20dp"
+            android:contentDescription="Menu Icon"
+            android:src="@drawable/profile_icon" />
+    </RelativeLayout>
+
+</RelativeLayout>

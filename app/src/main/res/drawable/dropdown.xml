@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background Item -->
+    <item>
+        <shape android:shape="rectangle">
+
+        </shape>
+    </item>
+    <!-- Vector Item -->
+    <item>
+        <vector
+            android:alpha="0.94"
+            android:height="48dp"
+            android:viewportHeight="24"
+            android:viewportWidth="24"
+            android:width="48dp"
+            android:tint="#000000"> <!-- Adjust tint color if needed -->
+            <path
+                android:fillColor="@android:color/white"
+                android:pathData="M7,10l5,5 5,-5z"/>
+        </vector>
+    </item>
+</layer-list>

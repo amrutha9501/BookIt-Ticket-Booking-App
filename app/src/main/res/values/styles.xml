@@ -1,0 +1,5 @@
+<resources>
+<style name="CustomCheckboxStyle" parent="Widget.AppCompat.CompoundButton.CheckBox">
+    <item name="colorControlActivated">@color/Rust</item>
+</style>
+</resources>

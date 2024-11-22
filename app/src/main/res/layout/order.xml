@@ -1,0 +1,261 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+
+
+    android:backgroundTint="@color/card_background"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:id="@+id/layout1_Group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Header Section -->
+        <LinearLayout
+            android:id="@+id/layout1_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/header1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Interstellar"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/header_text_color" />
+
+            <LinearLayout
+                android:id="@+id/layout1_idGroup"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_group"
+                android:orientation="horizontal"
+                android:paddingHorizontal="8dp"
+                android:paddingVertical="4dp"
+                android:backgroundTint="@color/id_background_color">
+
+                <TextView
+                    android:id="@+id/id1_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Id :"
+                    android:textSize="14sp"
+                    android:textColor="@color/secondary_text_color" />
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:text=""
+                    android:textSize="14sp"
+                    android:textColor="@color/primary_text_color" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Content Group 1 -->
+        <LinearLayout
+            android:id="@+id/contentGroup1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingStart="5dp">
+
+            <LinearLayout
+                android:id="@+id/showtype_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/showtype_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Show Type : "
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/showType"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text=""
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/location_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/location_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location : "
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text=""
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Content Group 2 -->
+        <LinearLayout
+            android:id="@+id/contentGroup2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingStart="5dp">
+
+            <LinearLayout
+                android:id="@+id/datetime_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/datetime_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date and Time : "
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/datetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text=""
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Content Group 3 -->
+        <LinearLayout
+            android:id="@+id/contentGroup3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal"
+            android:paddingStart="5dp">
+
+            <LinearLayout
+                android:id="@+id/seat_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/seat_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Seats : "
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/seat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text=""
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Booked Date and Time Group (New Section) -->
+        <LinearLayout
+            android:id="@+id/bookedDatetime_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:paddingStart="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bookedDatetime_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Booked Date and Time : "
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/bookedDatetime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text=""
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!-- Total Amount Group -->
+        <LinearLayout
+            android:id="@+id/totalAmount_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingStart="5dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/totalAmount_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount : "
+                    android:textColor="@color/secondary_text_color"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/totalAmount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="3dp"
+                    android:text=""
+                    android:textColor="@color/primary_text_color"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

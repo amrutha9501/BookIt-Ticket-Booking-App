@@ -1,0 +1,563 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="125dp"
+        android:backgroundTint="@color/Autumn_White"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background" />
+
+
+    <ImageView
+        android:id="@+id/HomeIcon"
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="35dp"
+        android:contentDescription="Home Icon"
+
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView2"
+        app:srcCompat="@drawable/homeicon" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="40dp"
+android:layout_marginStart="10dp"
+
+        android:background="@drawable/rounded_background_new"
+        android:backgroundTint="@color/light_Blue"
+
+
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias=".6"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+
+
+        <EditText
+            android:id="@+id/search"
+            android:padding="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:background="@drawable/rounded_background_new"
+            android:backgroundTint="@color/light_Blue"
+            android:ems="10"
+            android:hint="Search"
+            android:inputType="text" />
+
+
+        <ImageView
+            android:id="@+id/searchIcon"
+            android:layout_width="53dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/rounded_background_new"
+            android:backgroundTint="@color/Rust"
+            android:contentDescription="Search Icon"
+            android:padding="8dp"
+
+            app:srcCompat="@drawable/searchicon" />
+
+
+    </LinearLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/events"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="50dp"
+        android:paddingBottom="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+
+    <LinearLayout
+        android:id="@+id/filtersAccordian"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+
+        android:background="@android:color/transparent"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout">
+
+
+
+        <LinearLayout
+            android:id="@+id/filtersholder"
+            android:layout_width="120dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="@color/Rust"
+            android:clickable="true"
+            android:background="@drawable/rounded_background"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/filters"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="30dp"
+                android:clickable="true"
+                android:text="Filters"
+                android:textColor="#FFFF"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="3dp"
+
+                app:srcCompat="@drawable/dropdown_white"
+
+                />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/filterdropdowncontainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#80FFFFFF"
+            android:fillViewport="true"
+            android:visibility="invisible"
+
+            >
+
+            <LinearLayout
+                android:id="@+id/filteroptions"
+                android:layout_width="200dp"
+
+                android:layout_height="match_parent"
+                android:background="@android:color/transparent"
+                android:orientation="vertical"
+                android:paddingBottom="500dp">
+
+
+                <LinearLayout
+                    android:id="@+id/languageaccordian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="@drawable/rounded_background_4"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <!--    genre holder  -->
+
+                    <LinearLayout
+                        android:id="@+id/languageholder"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/language"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="30dp"
+                            android:clickable="true"
+                            android:text="Language"
+                            android:textColor="@color/filterstext"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/langauge_dropdown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="30dp"
+                            app:srcCompat="@drawable/dropdown" />
+                    </LinearLayout>
+                    <!--        end  of language holder    -->
+
+                    <LinearLayout
+                        android:id="@+id/languageoptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:visibility="visible">
+
+
+                        <!-- Hidden Content: Checkboxes -->
+                        <LinearLayout
+                            android:id="@+id/languages"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+
+                            <CheckBox
+                                android:id="@+id/kannada"
+                                style="@style/CustomCheckboxStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+
+                                android:text="Kannada"
+                                android:textColor="@color/filterstext" />
+
+                            <CheckBox
+                                android:id="@+id/english"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="English"
+                                android:textColor="@color/filterstext"
+
+                                />
+
+                            <CheckBox
+                                android:id="@+id/hindi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Hindi"
+                                android:textColor="@color/filterstext" />
+
+                            <CheckBox
+                                android:id="@+id/odia"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Odia"
+                                android:textColor="@color/filterstext" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/genreaccordian"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:background="@drawable/rounded_background_4"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <!--    genre holder  -->
+
+                    <LinearLayout
+                        android:id="@+id/genreholder"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/genre"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="30dp"
+                            android:clickable="true"
+                            android:text="Genre"
+                            android:textColor="@color/filterstext"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/genre_dropdown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="30dp"
+                            app:srcCompat="@drawable/dropdown" />
+                    </LinearLayout>
+                    <!--        end  of genre holder    -->
+
+                    <LinearLayout
+                        android:id="@+id/genreoptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:visibility="gone">
+
+
+                        <!-- Hidden Content: Checkboxes -->
+                        <LinearLayout
+                            android:id="@+id/genres"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/horror"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Horror"
+                                android:textColor="@color/filterstext" />
+
+                            <CheckBox
+                                android:id="@+id/comedy"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Comedy"
+                                android:textColor="@color/filterstext" />
+
+                            <CheckBox
+                                android:id="@+id/adventure"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Adventure"
+                                android:textColor="@color/filterstext" />
+
+                            <CheckBox
+                                android:id="@+id/scifi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Sci-fi"
+                                android:textColor="@color/filterstext" />
+
+                            <CheckBox
+                                android:id="@+id/drama"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Drama"
+                                android:textColor="@color/filterstext" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/locationaccordian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="@drawable/rounded_background_4"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <!--    genre holder  -->
+
+                    <LinearLayout
+                        android:id="@+id/locationholder"
+                        android:layout_width="200dp"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:orientation="horizontal"
+                        android:visibility="visible">
+
+
+                        <TextView
+                            android:id="@+id/location"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="30dp"
+                            android:clickable="true"
+                            android:text="Locations"
+                            android:textColor="@color/filterstext"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/location_dropdown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="30dp"
+                            app:srcCompat="@drawable/dropdown" />
+                    </LinearLayout>
+                    <!--        end  of genre holder    -->
+
+                    <LinearLayout
+                        android:id="@+id/locationoptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:orientation="horizontal"
+                        android:padding="16dp"
+                        android:visibility="gone">
+
+
+                        <!-- Hidden Content: Checkboxes -->
+                        <LinearLayout
+
+                            android:id="@+id/locations"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+
+                            android:orientation="vertical">
+
+                            <CheckBox
+                                android:id="@+id/mangalore"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Mangalore"
+                                android:textColor="@color/filterstext" />
+
+                            <CheckBox
+                                android:id="@+id/udupi"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Udupi"
+                                android:textColor="@color/filterstext" />
+
+                            <CheckBox
+                                android:id="@+id/manipal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Manipal"
+                                android:textColor="@color/filterstext" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ratingAccordian"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:background="@drawable/rounded_background_4"
+                    android:orientation="vertical">
+
+                    <!--     price holder  -->
+                    <LinearLayout
+                        android:id="@+id/ratingholder"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@android:color/transparent"
+                        android:clickable="true"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/price"
+                            android:layout_width="70dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="30dp"
+                            android:clickable="true"
+                            android:text="Rating"
+                            android:textColor="@color/filterstext"
+                            android:textSize="18sp" />
+
+                        <ImageView
+                            android:id="@+id/rating_dropdown"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="30dp"
+                            app:srcCompat="@drawable/dropdown" />
+                    </LinearLayout>
+                    <!--        end  of price holder    -->
+
+                    <LinearLayout
+                        android:id="@+id/ratingoptions"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@android:color/transparent"
+                        android:orientation="vertical"
+                        android:padding="16dp"
+                        android:visibility="gone">
+
+
+                        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                            android:id="@+id/ratings"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <!-- Radio Button 4 -->
+                            <RadioButton
+                                android:id="@+id/ratingabove0"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Any"
+                                android:textColor="@color/filterstext" />
+
+                            <!-- Radio Button 1 -->
+                            <RadioButton
+                                android:id="@+id/ratingabove9"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="9+"
+                                android:textColor="@color/filterstext" />
+
+                            <!-- Radio Button 2 -->
+                            <RadioButton
+                                android:id="@+id/ratingabove7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="7+"
+                                android:textColor="@color/filterstext" />
+
+                            <!-- Radio Button 3 -->
+                            <RadioButton
+                                android:id="@+id/ratingabove5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="5+"
+                                android:textColor="@color/filterstext" />
+
+
+                        </RadioGroup>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+                <Button
+                    android:id="@+id/applyfilters"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+
+                    android:backgroundTint="@color/Firmament_Blue"
+                    android:elevation="8dp"
+                    android:fontFamily="sans-serif-medium"
+
+                    android:text="Apply"
+                    android:textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

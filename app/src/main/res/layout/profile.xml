@@ -1,0 +1,219 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Profile"
+    android:background="@color/atomn_white">
+
+    <!-- Section with blue background -->
+    <RelativeLayout
+        android:id="@+id/img_backgroundGroup"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/menu_view"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_marginTop="-120dp">
+
+        <ImageView
+            android:id="@+id/background_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/blue_background"
+            android:scaleType="centerCrop"
+            android:clipToOutline="true"
+            />
+
+
+        <!-- Avatar image section -->
+    </RelativeLayout>
+
+    <!-- Rest of the content -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/content_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/img_backgroundGroup"
+        android:background="@color/water_blue"
+        >
+
+        <LinearLayout
+            android:id="@+id/userGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@+id/logout_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="150dp">
+
+            <TextView
+                android:id="@+id/profile_username_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username: "
+                android:textColor="@color/filterstext"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/profile_username"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="@color/text_secondary"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <!-- Rest of the content without the background -->
+        <LinearLayout
+            android:id="@+id/emailGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/userGroup"
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/logout_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="100dp">
+
+            <TextView
+                android:id="@+id/profile_email_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email: "
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/filterstext"/>
+
+            <TextView
+                android:id="@+id/profile_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="22sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/phoneGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/emailGroup"
+
+            android:layout_marginTop="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/logout_button"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="50dp">
+
+            <TextView
+                android:id="@+id/profile_phone_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone: "
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/filterstext" />
+
+            <TextView
+                android:id="@+id/profile_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="22sp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginBottom="20dp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/logout_button"
+            android:layout_width="200dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/Rust"
+            android:fontFamily="sans-serif-medium"
+            android:text="Log out"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Profile image in the center -->
+    <RelativeLayout
+        android:id="@+id/profile_img_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/content_group"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-75dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:background="@drawable/img_background"
+            android:clipToOutline="true"
+            android:contentDescription="Profile Image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_profile" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/menu_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp">
+
+        <!-- Back Icon on the left -->
+        <ImageView
+            android:id="@+id/back_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:contentDescription="Back Icon" />
+
+        <!-- Title in the center -->
+        <TextView
+            android:id="@+id/order_history"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Profile"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+        <ImageView
+            android:id="@+id/order_history_icon"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@drawable/cart_icon"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:contentDescription="Menu Icon"
+            android:layout_alignParentEnd="true"/>
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Bookit</string>
+    <string name="registered">Already have an account? Sign In</string>
+    <string name="name">Name\n</string>
+    <string name="usrName">Username</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="confirmPwd">Confirm password</string>
+    <string name="logIn">Log In</string>
+    <string name="signUp">Sign Up</string>
+    <string name="phone">Phone no</string>
+    <string name="signupText">Let\'s get you Signed Up!</string>
+    <string name="loginText">Let\'s get you Logged in!</string>
+    <string name="psw">Password</string>
+
+    <string name="pvr_location">PVR</string>
+    <string name="show_name"><![CDATA[Deadpool & Wolverine]]></string>
+    <string name="seatSelection">Select your seat category</string>
+    <string name="seat1">"  1"</string>
+    <string name="seat2">"  2"</string>
+    <string name="seat3">"  3"</string>
+    <string name="seat4">"  4"</string>
+    <string name="seat5">"  5"</string>
+    <string name="seat6">"  6"</string>
+    <string name="seat7">"  7"</string>
+    <string name="seat8">"  8"</string>
+    <string name="seat9">"  9"</string>
+    <string name="seat10">"  10"</string>
+    <string name="total"> Total :</string>
+    <string name="confirm">CONFIRM</string>
+    <string name="date">05/06/2024</string>
+    <string name="time">05:30 PM</string>
+    <string name="back">Back button</string>
+    <string name="success_pic">Success picture</string>
+    <string name="vipSeats">20</string>
+    <string name="platinumSeats">14</string>
+    <string name="goldSeats">10</string>
+    <string name="silverSeats">5</string>
+    <string name="specialSeats">4</string>
+    <string name="wantedSeats">How many Seats?</string>
+    <string name="available">Available</string>
+    <string name="goldText">₹200 GOLD</string>
+    <string name="silverText">₹150 SILVER</string>
+    <string name="goldRate">₹200 GOLD</string>
+    <string name="silverRate">₹150 SILVER</string>
+    <string name="specialRate">₹100 SPECIAL</string>
+    <string name="vipRate">₹350 VIP</string>
+    <string name="platinumRate">₹250 PLATINUM</string>
+
+    <string name="success">Payment success !</string>
+    <string name="bookedSuccesully">Ticket booked successfully..!</string>
+    <string name="ticketId">Ticket id :</string>
+    <string name="ticketIdno">1054</string>
+    <string name="home">HOME</string>
+    <string name="orders">Your Orders</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+</resources>
